@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sydney Metro</title>
+    <style>
+      .content-section img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .content-section img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .italic {
+        font-size: 15px;
+      }
+      .Headings {
+        font-size: 30px;
+      }
+      /* Global Styles */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: rgb(22, 131, 136);
+        color: black;
+        text-align: center;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(22, 131, 136);
+        color: black;
+      }
+
+      /* Header Section */
+      header {
+        padding: 60px 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      /* Image Section */
+      .image-container {
+        text-align: center;
+        margin: 20px auto;
+        max-width: 80%;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Content Section */
+      .content-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .content-section img {
+        flex: 1;
+        max-width: 40%;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      .content-section .text-content {
+        flex: 2;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .navbar a {
+          float: none;
+          display: block;
+          text-align: center;
+        }
+
+        header h1 {
+          font-size: 36px;
+        }
+
+        .image-container {
+          max-width: 100%;
+        }
+
+        .content-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .content-section img {
+          max-width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+
+        .content-section .text-content {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <h1>Sydney Metro</h1>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="Metro/Collage.png" alt="Sydney Metro Collage" />
+    </div>
+
+    <div class="Headings">
+      <h1>Rolling Stock</h1>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="content-section">
+      <img src="Metro/Metro Train At Chatswood.jpg" alt="Sydney Metro Train" />
+      <div class="text-content">
+        <ul>
+          <li>Class: Alstom Metropolis</li>
+          <li>In Service: 2019-Present</li>
+          <li>Manufacturer: Alstom</li>
+          <li>
+            Constructed: 2016-2018 (first batch), 2019-2024 (second batch)
+          </li>
+          <li>Number Built: 45 (sets)</li>
+          <li>Number In Service: 45 (sets)</li>
+          <li>Operator: Metro Trains Sydney</li>
+          <li>
+            Routes Served:
+            <div class="Lines">
+              <img src="Lines/M1.png" width="10%" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Headings">
+      <h1>What Is Sydney Metro?</h1>
+    </div>
+
+    <div class="content-section">
+      <img src="Metro/WISM.jpg" alt="Sydney Metro Train" />
+      <div class="text-content">
+        <ul>
+          <p>
+            Sydney Metro is a rapid transit system in Sydney, Australia, and is
+            the largest public transport project in the country. It is designed
+            to improve the cities public transport network by providing
+            high-frequency, driverless trains that operate independently of the
+            existing suburban rail network. Sydney Metro aims to reduce travel
+            times, increase capacity, and improve connectivity across the
+            Greater Sydney area.
+          </p>
+          <p>
+            The system currently has one line which is the M1 Metro North West &
+            Bankstown Line. Future expansions, including the Metro West Line and
+            the Metro Western Sydney Airport Line, are also planned to connect
+            additional parts of the city and its suburbs.
+          </p>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Headings">
+      <h1>Current Sydney Metro Line</h1>
+    </div>
+
+    <div class="content-section">
+      <img src="Metro/BETTER SYSTEM MAP.png" alt="M1 System Map" />
+      <div class="text-content">
+        <ul>
+          <p>
+            Sydeney Metro so far only has one line which is the M1 Metro North
+            West & Bankstown Line. The line runs 52km through tunnels, and
+            bridges. It is comprised of 21 stations. The line runs 6 car Alstom
+            Metropolis EMU's (Electric Multiple Umit). Headways range from 4
+            minutes in the peak, 5-7minutes in the intra peak, and 10 minutes
+            off peak and weekends.
+          </p>
+          <p><i class="italic">See the system map for more information.</i></p>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Headings">
+      <h1>Future Expansion</h1>
+    </div>
+
+    <div class="content-section">
+      <img src="Metro/Future Expansion.png" alt="Future Metro Map" />
+      <div class="text-content">
+        <ul>
+          <p>
+            Sydney Metro is currently in the process of building 3 projects. Two
+            new lines and in the pocess of converting an existng train line into
+            Metro. The first to be finished will be the conversion of the
+            Bankstown line to Metro and will connect with the existing M1 Metro
+            line. The Bankstown metro conversion should be finished and services
+            running by 2025. The next to be finished would be the Western Sydney
+            Metro and Arostroplis Metro line which would connect the existing St
+            Mary's station to the new Nancy Bird Walton Western Sydney Airport.
+            This line is expected to open in 2026 alongside with the airport
+            opening. The last metro project to open would be the Metro West
+            line. The line would make and easy connection from Sydney CBD to
+            Parramatta, which is to be proposed as the Sydney's second CBD. The
+            line would run from a new Hunter Street Station and then would go
+            though Pyrmont, The Bays, Five Dock, Burwood North, then would
+            connect with the existing Nth Strathfield Station and then would
+            connect with existing Olympic Station, and then would go to a
+            seperate Parramatta Station and then would finish its journey at the
+            existing Westemead Station. The line has been proposed to finish in
+            2030.
+          </p>
+          <p>
+            The government has also proposed that they will build a new metro
+            line every 4-6 years for 100 years.
+          </p>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
