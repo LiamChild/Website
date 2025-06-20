@@ -3,20 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intercity Train Fleet</title>
+    <title>Regional Train Fleet</title>
     <style>
+      /* Hover Effect for All Content Section Images */
       .content-section img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-section img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-      .lines {
-        size: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+
+      .content-section img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Line Icons Styling */
+      .lines {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+      }
+
+      .lines img {
+        width: 80px;
+        height: auto;
+        vertical-align: middle;
+      }
+
       /* Global Styles */
       body,
       html {
@@ -28,7 +40,6 @@
         text-align: center;
       }
 
-      /* Navigation Bar */
       .navbar {
         overflow: hidden;
         background-color: #333;
@@ -53,7 +64,6 @@
         color: black;
       }
 
-      /* Header Section */
       header {
         padding: 60px 20px;
         background-color: #333;
@@ -65,7 +75,6 @@
         margin-bottom: 20px;
       }
 
-      /* Image Section */
       .image-container {
         text-align: center;
         margin: 20px auto;
@@ -79,7 +88,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
-      /* Content Section */
       .content-section {
         display: flex;
         justify-content: space-between;
@@ -107,7 +115,6 @@
         line-height: 1.6;
       }
 
-      /* Responsive Design */
       @media (max-width: 768px) {
         .navbar a {
           float: none;
@@ -146,145 +153,86 @@
       <a href="index.html">Home</a>
     </div>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-      <h1>Intercity Train Fleet</h1>
+      <h1>Regional Train Fleet</h1>
     </header>
 
-    <!-- Image Section -->
+    <!-- Banner Image -->
     <div class="image-container">
-      <img src="Inter/Collage.png" alt="SIntercity Train Fleet" />
+      <img src="Regional/Collage.webp" alt="Regional Train Fleet" />
     </div>
 
-    <!-- Content Sections -->
+    <!-- XPT Section -->
     <div class="content-section">
-      <img src="Inter/V set.jpg" alt="V-Set" />
+      <img src="Regional/XPT.webp" alt="XPT" />
       <div class="text-content">
         <ul>
-          <li>Class: V-set</li>
-          <li>In Service: 1970-Present</li>
-          <li>Manufacturer: A Goninan & CO</li>
-          <li>Constructed: 1970-1989</li>
-          <li>Number Built: 246 Carriges</li>
-          <li>Number In Service: 204 Carriges (51 Sets)</li>
-          <li>Formation: 4 Car Sets</li>
-          <li>Operator: NSW TrainLink</li>
-          <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/BMT.png" />
-              <img src="/Lines/CCN.png" />
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="content-section">
-      <img src="/Inter/H set.jpg" alt="H-set" />
-      <div class="text-content">
-        <ul>
-          <li>Class: H-set</li>
-          <li>In Service: 2006-Present</li>
-          <li>Manufacturer: UGL Rail</li>
-          <li>Constructed: 2006-2012</li>
-          <li>Number Built: 221 Carriges</li>
-          <li>Number In Service: 220 Carriges</li>
-          <li>Formation: 4 Car Sets</li>
-          <li>Operator: NSW TrainLink</li>
-          <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/CCN.png" />
-              <img src="/Lines/SCO.png" />
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="content-section">
-      <img src="Inter/Blue Endeavour.jpg" width="25%" alt="N-set" />
-      <img src="Inter/Orange Endeavour.jpg" width="25%" alt="N-set" />
-      <div class="text-content">
-        <ul>
-          <li>Class: N-set</li>
-          <li>In Service: 1994-Present</li>
+          <li>Class: XPT</li>
+          <li>In Service: 1982–Present</li>
           <li>Manufacturer: ABB</li>
-          <li>Constructed: 1994-1996</li>
-          <li>Number Built: 30 Carriges (15 Sets)</li>
-          <li>Number In Service: 28 Carriges (14 Sets)</li>
-          <li>Formation: 2 Car Sets</li>
+          <li>Constructed: 1981–1994</li>
+          <li>Number Built: 19 Locomotives</li>
+          <li>Number In Service: Unknown</li>
           <li>Operator: NSW TrainLink</li>
           <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/BMT.png" />
-              <img src="/Lines/SCO.png" />
-              <img src="/Lines/HUN.png" />
-              <img src="/Lines/SHL.png" />
+            Routes Served:
+            <div class="lines">
+              <img src="Lines/NCR.webp" alt="NCR" />
+              <img src="Lines/WR.webp" alt="WR" />
+              <img src="Lines/SR.webp" alt="SR" />
+            </div>
+          </li>
         </ul>
       </div>
     </div>
 
+    <!-- XPT Carriages Section -->
     <div class="content-section">
-      <img src="Current/T set.webp" alt="T-set" />
+      <img src="Regional/Carriges.webp" alt="XPT Carriages" />
       <div class="text-content">
         <ul>
-          <li>Class: T-set</li>
-          <li>In Service: 1988-Present</li>
-          <li>Manufacturer: A Goninan & Co</li>
-          <li>Constructed: 1987-1997</li>
-          <li>Number Built: 455 Carriges</li>
-          <li>Number In Service: 447 Cariges</li>
-          <li>Formation: 4 Car Sets</li>
-          <li>Operator: Sydney Trains</li>
+          <li>Class: XPT Carriages</li>
+          <li>In Service: 1982–Present</li>
+          <li>Manufacturer: Commeng and ABB</li>
+          <li>Constructed: 1981–1993</li>
+          <li>Number Built: 60 Carriages</li>
+          <li>Number In Service: 58 Carriages</li>
+          <li>Formation: 4–7 Car Sets + 2 XPT Locomotives</li>
+          <li>Operator: NSW TrainLink</li>
           <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/SCO.png" />
-              <p>(Only Between Waterfall and Port Kembla)</p>
+            Routes Served:
+            <div class="lines">
+              <img src="Lines/NCR.webp" alt="NCR" />
+              <img src="Lines/WR.webp" alt="WR" />
+              <img src="Lines/SR.webp" alt="SR" />
+            </div>
+          </li>
         </ul>
       </div>
     </div>
 
+    <!-- Xplorer Section -->
     <div class="content-section">
-      <img src="/Inter/Hunter.jpg" alt="J-set" />
+      <img src="Regional/Xplorer.webp" alt="Xplorer" />
       <div class="text-content">
         <ul>
-          <li>Class: J-set</li>
-          <li>In Service: 2006-Present</li>
-          <li>Manufacturer: UGL Rail</li>
-          <li>Constructed: 2006-2007</li>
-          <li>Number Built: 14 Carriges (7 Sets)</li>
-          <li>Number In Service: 14 Carriges (7 Sets)</li>
-          <li>Formation: 2 Car Sets</li>
+          <li>Class: Xplorer</li>
+          <li>In Service: 1993–Present</li>
+          <li>Manufacturer: ABB</li>
+          <li>Constructed: 1994–1996</li>
+          <li>Number Built: 23 Carriages</li>
+          <li>Number In Service: Unknown</li>
+          <li>Formation: 2, 3 or 4 Car Sets</li>
           <li>Operator: NSW TrainLink</li>
           <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/HUN.png" />
-        </ul>
-      </div>
-    </div>
-    <div class="content-section">
-      <img src="/Inter/NIF.webp" alt="D-set" />
-      <div class="text-content">
-        <ul>
-          <li>Class: D-set</li>
-          <li>In Service: December 2024-Present</li>
-          <li>Manufacturer: Hyandai Rotem</li>
-          <li>Constructed: 2019-2022</li>
-          <li>Number Built: 610 Carriges (61 6-Car Sets, 61 4-Car Sets)</li>
-          <li>Number In Service: 12 Four Car Sets (As of March 2025)</li>
-          <li>Formation: 6 & 4 Car Sets</li>
-          <li>Operator: NSW TrainLink</li>
-          <li>
-            Lines Served:
-            <div class="Lines">
-              <img src="/Lines/SCO.png" />
-              <img src="/Lines/BMT.png" />
-              <img src="/Lines/CCN.png" />
+            Routes Served:
+            <div class="lines">
+              <img src="Lines/NWR.webp" alt="NWR" />
+              <img src="Lines/WR.webp" alt="WR" />
+              <img src="Lines/SR.webp" alt="SR" />
+            </div>
+          </li>
         </ul>
       </div>
     </div>
