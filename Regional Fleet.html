@@ -6,17 +6,20 @@
     <title>Regional Train Fleet</title>
     <style>
       .content-section img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-section img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-      .lines {
-        size: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+
+      .content-section img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .lines img {
+        width: 50px;
+        margin: 5px;
+        vertical-align: middle;
+      }
+
       /* Global Styles */
       body,
       html {
@@ -28,7 +31,6 @@
         text-align: center;
       }
 
-      /* Navigation Bar */
       .navbar {
         overflow: hidden;
         background-color: #333;
@@ -53,7 +55,6 @@
         color: black;
       }
 
-      /* Header Section */
       header {
         padding: 60px 20px;
         background-color: #333;
@@ -65,7 +66,6 @@
         margin-bottom: 20px;
       }
 
-      /* Image Section */
       .image-container {
         text-align: center;
         margin: 20px auto;
@@ -79,7 +79,6 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
-      /* Content Section */
       .content-section {
         display: flex;
         justify-content: space-between;
@@ -107,7 +106,6 @@
         line-height: 1.6;
       }
 
-      /* Responsive Design */
       @media (max-width: 768px) {
         .navbar a {
           float: none;
@@ -141,17 +139,14 @@
     </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
     <div class="navbar">
       <a href="index.html">Home</a>
     </div>
 
-    <!-- Header Section -->
     <header>
       <h1>Regional Train Fleet</h1>
     </header>
 
-    <!-- Image Section -->
     <div class="image-container">
       <img src="Regional/Collage.png" alt="Regional Train Fleet" />
     </div>
@@ -166,14 +161,14 @@
           <li>Manufacturer: ABB</li>
           <li>Constructed: 1981-1994</li>
           <li>Number Built: 19 Locomotives</li>
-          <li>Number In Service: Number Unkown?</li>
+          <li>Number In Service: Number Unknown?</li>
           <li>Operator: NSW TrainLink</li>
           <li>
             Routes Served:
-            <div class="Lines">
+            <div class="lines">
               <img src="Lines/NCR.png" />
-              <img src="/Lines/WR.png" />
-              <img src="/Lines/SR.png" />
+              <img src="Lines/WR.png" />
+              <img src="Lines/SR.png" />
             </div>
           </li>
         </ul>
@@ -190,14 +185,14 @@
           <li>Constructed: 1981-1993</li>
           <li>Number Built: 60 Carriges</li>
           <li>Number In Service: 58 Carriges</li>
-          <li>Formation: 4-7 Carrige Sets + 2 XPT Locomotives  </li>
+          <li>Formation: 4-7 Carrige Sets + 2 XPT Locomotives</li>
           <li>Operator: NSW TrainLink</li>
           <li>
             Routes Served:
-            <div class="Lines">
-              <img src="/Lines/NCR.png" />
-              <img src="Website/Lines/WR.png" />
-              <img src="/Lines/SR.png" />
+            <div class="lines">
+              <img src="Lines/NCR.png" />
+              <img src="Lines/WR.png" />
+              <img src="Lines/SR.png" />
             </div>
           </li>
         </ul>
@@ -205,7 +200,7 @@
     </div>
 
     <div class="content-section">
-      <img src="Regional/Xplorer.jpg" width="25%" alt="Xplorer" />
+      <img src="Regional/Xplorer.jpg" alt="Xplorer" />
       <div class="text-content">
         <ul>
           <li>Class: Xplorer</li>
@@ -213,16 +208,18 @@
           <li>Manufacturer: ABB</li>
           <li>Constructed: 1994-1996</li>
           <li>Number Built: 23 Carriges</li>
-          <li>Number In Service: Number Unkown?</li>
+          <li>Number In Service: Number Unknown?</li>
           <li>Formation: 2,3 or 4 Car Sets</li>
           <li>Operator: NSW TrainLink</li>
           <li>
             Routes Served:
-            <div class="Lines">
-              <img src="/Lines/NWR.png" />
-              <img src="/Lines/WR.png" />
-              <img src="Website/Lines/SR.png" />
-            </ul>
+            <div class="lines">
+              <img src="Lines/NWR.png" />
+              <img src="Lines/WR.png" />
+              <img src="Lines/SR.png" />
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
